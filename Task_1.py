@@ -1,5 +1,5 @@
-# объявление функции
-def is_password_good(password):
+
+def is_password_hard(password):
     if len(password) < 8:
         return False
     count_1 = False
@@ -13,8 +13,6 @@ def is_password_good(password):
         elif i.isdigit():
             count_3 = True
     return count_1 and count_2 and count_3
-# считываем данные
+
 txt = input()
 
-# вызываем функцию
-print(is_password_good(txt))
